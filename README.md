@@ -16,10 +16,6 @@ $ pip install PyGithub
 
 ```python
 from github import Github
-
-# or using an access token
-g = Github("access_token")
-__main__
 inputorg = input("Organization Name = ")
 inputrepo = int(input("Number of top repository = "))
 inputcommit = int(input("Number of top communities = "))
