@@ -17,21 +17,20 @@ $ pip install PyGithub
 ```python
 from github import Github
 
-# First create a Github instance:
-
-# using username and password
-g = Github("user", "password")
-
 # or using an access token
 g = Github("access_token")
-
-# Github Enterprise with custom hostname
-g = Github(base_url="https://{hostname}/api/v3", login_or_token="access_token")
-
-# Then play with your Github objects:
-for repo in g.get_user().get_repos():
-    print(repo.name)
+__main__
+inputorg = input("Organization Name = ")
+inputrepo = int(input("Number of top repository = "))
+inputcommit = int(input("Number of top communities = "))
+userToken = input("User Token = ")
+lookup = GitLookUp(userToken.strip())
+lookup.query(orgname=inputorg,committiesCount=inputcommit,repoCount=inputrepo)
 ```
+<p align="center">
+  <img alt="Git" src="https://cloud.githubusercontent.com/assets/11839736/16642200/6624dde0-43bd-11e6-8595-c81885ba0dc2.png">
+</p>
+
 ## Working with the code
 Input Variables:-
   1. Organisation Name
