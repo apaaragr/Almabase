@@ -28,7 +28,7 @@ lookup = GitLookUp(userToken.strip())
 lookup.query(orgname=inputorg,committiesCount=inputcommit,repoCount=inputrepo)
 ```
 <p align="center">
-  <img alt="Git" src="https://cloud.githubusercontent.com/assets/11839736/16642200/6624dde0-43bd-11e6-8595-c81885ba0dc2.png">
+  <img alt="Git" src="https://github.com/apaaragr/Almabase/blob/master/Screenshot%20(199).png">
 </p>
 
 ## Working with the code
